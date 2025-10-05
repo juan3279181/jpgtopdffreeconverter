@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="monetag" content="349aefe49717be715236a44b5b1841bf">
     <meta name="monetag" content="39a4e6072a60f335f4a48bd637537ae5">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,6 +32,7 @@
             align-items: center;
             min-height: 250px;
             background-color: #f9f9f9;
+            text-align: center; /* Ensures content inside is centered */
         }
         h1, h2 { 
             text-align: center; 
@@ -234,18 +234,18 @@
         <h1>JPG to PDF Converter</h1>
         <p>Easily convert your JPG images to PDF format. Upload your images, convert them, and download the PDF.</p>
         
-        <!-- New Ad Container -->
         <div class="new-ad-container">
-            <h2>Special Offer</h2>
+            <h2>Display Ad Zone</h2>
             <div class="ad-container">
-                <div id="new-ad-slot"></div>
+                <p>Ad content will load here (e.g., Zone ID: 9975579)</p>
+                <div id="new-ad-slot-1"></div>
             </div>
         </div>
 
-        <h2>Native Banner Ad</h2>
+        <h2>Another Ad Spot</h2>
         <div class="ad-container">
-            <div data-zone-id="9976409" class="native-ad"></div>
-            <script async src="https://groleegni.net/native.min.js"></script>
+            <p>Ad content will load here (e.g., Zone ID: 9977971)</p>
+            <div id="new-ad-slot-2"></div>
         </div>
 
         <div class="converter-container">
@@ -272,28 +272,38 @@
             <div id="statusMessage" class="status-message"></div>
         </div>
         
-        <p>Here is more content on the page. The Vignette ad (pop-up) will appear automatically between page navigations when the ad network decides it's the best time, ensuring a good user experience.</p>
+        <p>Here is more content on the page.</p>
     </div>
     
-    <!-- Ad Popup -->
     <div class="ad-popup" id="adPopup">
         <div class="ad-popup-content">
             <span class="close-ad" id="closeAd">&times;</span>
             <h3>Special Offer!</h3>
             <p>Thank you for using our converter! Check out this special offer:</p>
             <div class="ad-container">
+                <p>Popup Ad Content Placeholder</p>
                 <div id="popup-ad-slot"></div>
             </div>
             <p>This ad helps keep our service free. Thank you for your support!</p>
         </div>
     </div>
 
-    <!-- Include jsPDF library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     
-    <!-- Your new ad script -->
     <script src='//libtl.com/sdk.js' data-zone='9975579' data-sdk='show_9975579'></script>
     
+    <script async src="https://groleegni.net/native.min.js"></script>
+    
+    <script>(function(s){s.dataset.zone='9975972',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
+    <script>(function(s){s.dataset.zone='9977971',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
+    <script>(function(s){s.dataset.zone='9977987',s.src='https://groleegni.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
+    <script>(function(s){s.dataset.zone='9978000',s.src='https://forfrogadiertor.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
+    <p style="text-align: center; margin-top: 20px;"><a href="https://otieu.com/4/9977497" target="_blank">Click Here for an Exclusive Offer!</a></p>
+
     <script>
         // Initialize variables
         let uploadedImages = [];
@@ -468,8 +478,8 @@
                         
                         // Show ad popup after a short delay
                         setTimeout(() => {
+                            // This popup logic is kept but will not load your new ad zones automatically.
                             adPopup.style.display = 'flex';
-                            // Load new ad in popup if needed
                             loadNewAdInPopup();
                         }, 1000);
                     }
@@ -491,13 +501,10 @@
         
         // Function to load new ad in popup if needed
         function loadNewAdInPopup() {
-            // This function can be customized based on how your ad SDK works
+            // Placeholder: If you need a specific ad to load in the popup, you would add the SDK call here.
             console.log('Ad popup displayed - potential for additional ad loading');
         }
     </script>
 
-    <script>(function(s){s.dataset.zone='9975972',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
-
 </body>
-    https://otieu.com/4/9977497
 </html>
